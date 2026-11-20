@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carter Williams</title>
+  <meta name="description" content="Carter Williams: physics, Northeastern University. Research, publications, CV and projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Carter Williams</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#software">Software</a></li>
+      <li><a href="assets/CV.pdf">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <!-- TODO: replace this div with <img class="portrait" src="assets/img/portrait.jpg" alt="Carter Williams"> -->
+    <div class="portrait">photo<br>assets/img/portrait.jpg</div>
+    <div>
+      <h1>Carter Williams</h1>
+      <p class="role">
+        <span class="todo">TODO: position, e.g. PhD student</span>
+        · Department of Physics, Northeastern University
+      </p>
+      <div class="links">
+        <a class="btn primary" href="assets/CV.pdf">CV (PDF)</a>
+        <a class="btn" href="https://github.com/CarterDW">GitHub</a>
+        <a class="btn" href="#projects">Computational physics portfolio</a>
+        <!-- TODO: add or delete these -->
+        <a class="btn" href="mailto:TODO"><span class="todo">TODO: email</span></a>
+        <a class="btn" href="TODO"><span class="todo">TODO: arXiv / ADS / ORCID / Scholar</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      <span class="todo">TODO: two or three sentences in your own words: who you are, what you work on, who you work with.</span>
+    </p>
+    <p class="muted">Research interests</p>
+    <!-- TODO: confirm, edit or replace these -->
+    <ul class="tags">
+      <li>Cosmology</li>
+      <li>Large-scale structure</li>
+      <li>Perturbation theory</li>
+      <li>Galaxy intrinsic alignments</li>
+      <li>Computational physics</li>
+    </ul>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <!-- Copy one <li> per paper. Bold your own name with <strong>. -->
+    <ul class="entries">
+      <li>
+        <div class="entry-title"><span class="todo">TODO: Paper title</span></div>
+        <div class="entry-meta">A. Author, <strong>C. Williams</strong>, B. Author · <em>Journal</em> (Year)</div>
+        <div class="entry-links"><a href="TODO">arXiv</a><a href="TODO">ADS</a><a href="TODO">code</a></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===================== TALKS ===================== -->
+  <section id="talks">
+    <h2>Talks &amp; presentations</h2>
+    <ul class="entries">
+      <li>
+        <div class="entry-title">What physics does it take to build a reasonable solar system?</div>
+        <div class="entry-meta">PHYS 7321 Computational Physics, Northeastern University · December 8, 2026</div>
+        <div class="entry-links"><a href="/comp2026-portfolio/solar-system/">project page</a></div>
+      </li>
+      <li>
+        <div class="entry-title"><span class="todo">TODO: talk or poster title</span></div>
+        <div class="entry-meta">Venue · Date</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3>Computational Physics Portfolio</h3>
+        <span class="muted">PHYS 7321 · Fall 2026</span>
+      </div>
+      <p>
+        Three projects, each with its own write-up, figures and code. Each one starts from a
+        simple model and asks which pieces of physics have to be added before the results look right.
+      </p>
+      <a class="btn primary" href="/comp2026-portfolio/">Open the portfolio →</a>
+
+      <div class="cards">
+        <a class="card" href="/comp2026-portfolio/solar-system/">
+          <img src="assets/img/thumb-solar.jpg" alt="Fragments radiating from a super-catastrophic collision in the N-body integrator">
+          <div class="body">
+            <h3>Solar system formation</h3>
+            <p>N-body planet formation with collisions, fragmentation, disk physics and GR.
+               The project tracks which physics a reasonable solar system needs.</p>
+            <span class="go">Project site →</span>
+          </div>
+        </a>
+        <a class="card" href="/comp2026-portfolio/defects/">
+          <img src="assets/img/thumb-defects.jpg" alt="XY-model spin field coloured by angle, with detected vortices and antivortices">
+          <div class="body">
+            <h3>Defects from phase transitions</h3>
+            <p>Vortices, domain walls and Kibble–Zurek scaling in lattice models of
+               cosmological phase transitions.</p>
+            <span class="go">Project site →</span>
+          </div>
+        </a>
+        <a class="card" href="/comp2026-portfolio/sky-classifier/">
+          <img src="assets/img/thumb-classifier.jpg" alt="SDSS galaxy cutouts from the classifier test set">
+          <div class="body">
+            <h3>Sky-object classifier</h3>
+            <p>A CNN that separates stars from galaxies in SDSS images. Training data come from a
+               forward model of the telescope, and the project measures which ingredients matter.</p>
+            <span class="go">Project site →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOFTWARE ===================== -->
+  <section id="software">
+    <h2>Software</h2>
+    <!-- TODO: confirm these descriptions match your actual contributions -->
+    <div class="software">
+      <div class="feature">
+        <h3><a href="https://github.com/jablazek/FAST-PT">FAST-PT</a></h3>
+        <p class="muted">Fast perturbation-theory power spectra via FFTLog.</p>
+        <p><span class="todo">TODO: what you contributed</span></p>
+      </div>
+      <div class="feature">
+        <h3><a href="https://github.com/CarterDW/CCL/tree/IA_galaxybias_terms">CCL</a></h3>
+        <p class="muted">The LSST DESC Core Cosmology Library.</p>
+        <p><span class="todo">TODO: e.g. intrinsic-alignment × galaxy-bias perturbation-theory terms (PR link)</span></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 Carter Williams</span>
+  <button class="theme-toggle" id="theme-toggle" type="button">Toggle theme</button>
+</footer>
+
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+  });
+</script>
+</body>
+</html>
