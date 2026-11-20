@@ -7,6 +7,8 @@ Personal academic site. Plain HTML/CSS with no build step: edit `index.html` and
 - `assets/CV.pdf`: CV (add it)
 - `assets/img/`: portrait and project thumbnails
 
+Before launch: delete the `<meta name="robots" content="noindex">` line in `index.html` (it keeps the draft out of search engines).
+
 Placeholders are marked `TODO` (highlighted yellow on the page): `grep -n TODO index.html`.
 
 The portfolio lives in its own repo, `comp2026-portfolio`, served at
