@@ -98,6 +98,14 @@ p { margin: 0 0 14px; }
 }
 .hero h1 { font-size: 40px; margin-bottom: 6px; }
 .hero .role { color: var(--muted); font-size: 17px; margin-bottom: 18px; }
+.hero.no-photo { grid-template-columns: 1fr; }
+.hero .role + .tagline { margin-top: -10px; }
+.tagline { font-family: var(--serif); font-size: 20px; line-height: 1.45; max-width: 640px; margin-bottom: 22px; }
+
+/* ---------- research ---------- */
+.research { display: grid; gap: 14px; }
+.research .feature { margin: 0; }
+.research h3 { font-size: 18px; }
 .links { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn {
   display: inline-flex; align-items: center; gap: 6px;
@@ -146,7 +154,8 @@ p { margin: 0 0 14px; }
 .card p { font-size: 14px; color: var(--muted); margin: 0; }
 .card .go { font-size: 13.5px; color: var(--accent); margin-top: 10px; display: block; }
 
-.software { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.software { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.software p { font-size: 15px; }
 .software .feature { margin: 0; }
 
 /* ---------- placeholders: grep for "todo" before publishing ---------- */

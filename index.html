@@ -6,7 +6,7 @@
   <!-- LAUNCH: delete this line to let search engines list the site -->
   <meta name="robots" content="noindex">
   <title>Carter Williams</title>
-  <meta name="description" content="Carter Williams: physics, Northeastern University. Research, publications, CV and projects.">
+  <meta name="description" content="Carter Williams: M.S. student in physics at Northeastern University working on galaxy intrinsic alignments and perturbation theory for LSST cosmology.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
@@ -22,11 +22,13 @@
     <a class="brand" href="#top">Carter Williams</a>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#talks">Talks</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#software">Software</a></li>
-      <li><a href="assets/CV.pdf">CV</a></li>
+      <!-- CV: uncomment once assets/CV.pdf (phone-free) is added
+      <li><a href="assets/CV.pdf">CV</a></li> -->
     </ul>
   </div>
 </nav>
@@ -34,22 +36,18 @@
 <main id="top">
 
   <!-- ===================== HERO ===================== -->
-  <header class="hero">
-    <!-- TODO: replace this div with <img class="portrait" src="assets/img/portrait.jpg" alt="Carter Williams"> -->
-    <div class="portrait">photo<br>assets/img/portrait.jpg</div>
+  <header class="hero no-photo">
     <div>
       <h1>Carter Williams</h1>
-      <p class="role">
-        <span class="todo">TODO: position, e.g. PhD student</span>
-        · Department of Physics, Northeastern University
-      </p>
+      <p class="role">M.S. student in Physics · Northeastern University</p>
+      <p class="tagline">Cosmology with galaxy surveys: intrinsic alignments, perturbation theory and simulations for LSST.</p>
       <div class="links">
-        <a class="btn primary" href="assets/CV.pdf">CV (PDF)</a>
+        <!-- CV: uncomment once assets/CV.pdf (phone-free) is added
+        <a class="btn primary" href="assets/CV.pdf">CV (PDF)</a> -->
+        <a class="btn primary" href="mailto:williams.cart@northeastern.edu">Email</a>
         <a class="btn" href="https://github.com/CarterDW">GitHub</a>
+        <a class="btn" href="https://orcid.org/0009-0007-5284-3965">ORCID</a>
         <a class="btn" href="#projects">Computational physics portfolio</a>
-        <!-- TODO: add or delete these -->
-        <a class="btn" href="mailto:TODO"><span class="todo">TODO: email</span></a>
-        <a class="btn" href="TODO"><span class="todo">TODO: arXiv / ADS / ORCID / Scholar</span></a>
       </div>
     </div>
   </header>
@@ -58,44 +56,95 @@
   <section id="about">
     <h2>About</h2>
     <p>
-      <span class="todo">TODO: two or three sentences in your own words: who you are, what you work on, who you work with.</span>
+      I'm an M.S. student in physics at Northeastern University, working with Prof. Jonathan Blazek.
+      I study the <b>intrinsic alignments</b> of galaxies, the correlated shapes that galaxies acquire from the tidal
+      fields they form in, and a leading systematic for weak-lensing cosmology with the Rubin Observatory's LSST. My thesis
+      calibrates the strength of intrinsic alignments with hydrodynamical simulations. I also develop the perturbation-theory
+      models of alignments and galaxy bias in FAST-PT and the LSST DESC Core Cosmology Library.
     </p>
-    <p class="muted">Research interests</p>
-    <!-- TODO: confirm, edit or replace these -->
+    <p>
+      I earned a B.S. in Physics and Mathematics (astrophysics concentration) at Northeastern in 2025, cum laude, where I
+      also worked on quantum information with Prof. Ning Bao.
+    </p>
     <ul class="tags">
       <li>Cosmology</li>
       <li>Large-scale structure</li>
+      <li>Weak lensing</li>
+      <li>Intrinsic alignments</li>
       <li>Perturbation theory</li>
-      <li>Galaxy intrinsic alignments</li>
-      <li>Computational physics</li>
+      <li>Hydrodynamical simulations</li>
+      <li>Quantum information</li>
     </ul>
+  </section>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <section id="research">
+    <h2>Research</h2>
+    <div class="research">
+      <div class="feature">
+        <div class="feature-head"><h3>Perturbation theory for alignments and clustering</h3><span class="muted">2023–present</span></div>
+        <p>Extended the tidal alignment and tidal torquing (TATT) model in FAST-PT with one-loop velocity-shear terms and the
+          nonlinear galaxy bias × alignment cross-correlation. The new terms were validated against an independent group's
+          calculation, which corrected kernel expansions in both
+          (<a href="#publications">Bera et al. 2025</a>), and are being added to CCL for DESC analyses. I also advise
+          students on a FAST-PT API refactor and on an effective-field-theory model for alignments and bias.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-head"><h3>Calibrating alignments with simulations</h3><span class="muted">thesis</span></div>
+        <p>Injecting physically motivated, luminosity- and color-dependent alignments into galaxies in the diffsky synthetic
+          catalogs. The model is calibrated on hydrodynamical simulations, with alignment and position correlation functions
+          measured in TreeCorr. The goal is to see how different alignment models map onto the bias parameters of
+          perturbative models.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-head"><h3>Approximating the set of separable states</h3><span class="muted">2025, with Prof. Ning Bao</span></div>
+        <p>Modeled the separable states of a multipartite quantum system with hyperspherical and ellipsoidal approximations to
+          its volume, checked against two-dimensional convex polytopes. Derived an exponential upper bound on the number of
+          approximate entanglement witnesses, and how it scales with error tolerance.</p>
+      </div>
+    </div>
   </section>
 
   <!-- ===================== PUBLICATIONS ===================== -->
   <section id="publications">
     <h2>Publications</h2>
-    <!-- Copy one <li> per paper. Bold your own name with <strong>. -->
     <ul class="entries">
       <li>
-        <div class="entry-title"><span class="todo">TODO: Paper title</span></div>
-        <div class="entry-meta">A. Author, <strong>C. Williams</strong>, B. Author · <em>Journal</em> (Year)</div>
-        <div class="entry-links"><a href="TODO">arXiv</a><a href="TODO">ADS</a><a href="TODO">code</a></div>
+        <div class="entry-title">A direct detection method of galaxy intrinsic ellipticity–gravitational shear correlation in non-linear regimes using self-calibration</div>
+        <div class="entry-meta">A. Bera, L. Medina Varela, V. Sooriyaarachchi, M. Ishak, <strong>C. Williams</strong>, and the LSST Dark Energy Science Collaboration · <em>JCAP</em> 09 (2025) 038</div>
+        <div class="entry-links"><a href="https://arxiv.org/abs/2503.24269">arXiv:2503.24269</a><a href="https://doi.org/10.1088/1475-7516/2025/09/038">journal</a></div>
       </li>
     </ul>
   </section>
 
   <!-- ===================== TALKS ===================== -->
   <section id="talks">
-    <h2>Talks &amp; presentations</h2>
+    <h2>Talks &amp; posters</h2>
     <ul class="entries">
       <li>
+        <div class="entry-title">Calibrating Intrinsic Alignment Strength with Hydrodynamical Simulations</div>
+        <div class="entry-meta">Poster · Cosmology and Galaxy Astrophysics with Simulations and Machine Learning, Flatiron Institute · January 2027</div>
+      </li>
+      <li>
         <div class="entry-title">What physics does it take to build a reasonable solar system?</div>
-        <div class="entry-meta">PHYS 7321 Computational Physics, Northeastern University · December 8, 2026</div>
+        <div class="entry-meta">Talk · PHYS 7321 Computational Physics, Northeastern University · December 2026</div>
         <div class="entry-links"><a href="/comp2026-portfolio/solar-system/">project page</a></div>
       </li>
       <li>
-        <div class="entry-title"><span class="todo">TODO: talk or poster title</span></div>
-        <div class="entry-meta">Venue · Date</div>
+        <div class="entry-title">Synthetic IA Injection Modeling in diffsky</div>
+        <div class="entry-meta">Lightning talk · LSST DESC 2026 Collaboration Meeting, Junior DESC Organization session · Summer 2026</div>
+      </li>
+      <li>
+        <div class="entry-title">Hyperspherical and Ellipsoidal Modeling of N-Dimensional Convex Sets: Approximating the Set of Separable States</div>
+        <div class="entry-meta">Talk · Northeastern Mathematics Capstone Presentations and Society of Physics Students Conference · Spring 2025</div>
+      </li>
+      <li>
+        <div class="entry-title">Computational Model for Galaxies' Intrinsic Alignment</div>
+        <div class="entry-meta">Talk · Society of Physics Students Co-Op Presentations and Rubin Day in Boston, Northeastern · Spring 2024</div>
+      </li>
+      <li>
+        <div class="entry-title">Testing Perturbative Models for Intrinsic Alignment</div>
+        <div class="entry-meta">Poster · RISE Expo, Northeastern · Spring 2024</div>
       </li>
     </ul>
   </section>
@@ -110,8 +159,8 @@
         <span class="muted">PHYS 7321 · Fall 2026</span>
       </div>
       <p>
-        Three projects, each with its own write-up, figures and code. Each one starts from a
-        simple model and asks which pieces of physics have to be added before the results look right.
+        Three projects, each with its own write-up, figures and code. Each one starts from a simple model and asks which
+        pieces of physics have to be added before the results look right.
       </p>
       <a class="btn primary" href="/comp2026-portfolio/">Open the portfolio →</a>
 
@@ -138,8 +187,8 @@
           <img src="assets/img/thumb-classifier.jpg" alt="SDSS galaxy cutouts from the classifier test set">
           <div class="body">
             <h3>Sky-object classifier</h3>
-            <p>A CNN that separates stars from galaxies in SDSS images. Training data come from a
-               forward model of the telescope, and the project measures which ingredients matter.</p>
+            <p>A CNN trained on a simulated sky and tested on real SDSS images, with a removal test of every
+               simulation ingredient.</p>
             <span class="go">Project site →</span>
           </div>
         </a>
@@ -150,17 +199,23 @@
   <!-- ===================== SOFTWARE ===================== -->
   <section id="software">
     <h2>Software</h2>
-    <!-- TODO: confirm these descriptions match your actual contributions -->
     <div class="software">
       <div class="feature">
         <h3><a href="https://github.com/jablazek/FAST-PT">FAST-PT</a></h3>
         <p class="muted">Fast perturbation-theory power spectra via FFTLog.</p>
-        <p><span class="todo">TODO: what you contributed</span></p>
+        <p>New intrinsic-alignment and bias terms. I've also advised on caching, continuous integration, unit tests and the
+          FPTHandler interface, and on JAX-PT, a differentiable JAX version.</p>
       </div>
       <div class="feature">
-        <h3><a href="https://github.com/CarterDW/CCL/tree/IA_galaxybias_terms">CCL</a></h3>
+        <h3><a href="https://github.com/LSSTDESC/CCL">CCL</a></h3>
         <p class="muted">The LSST DESC Core Cosmology Library.</p>
-        <p><span class="todo">TODO: e.g. intrinsic-alignment × galaxy-bias perturbation-theory terms (PR link)</span></p>
+        <p>Adding the new alignment and bias model terms, with unit tests and benchmarks.</p>
+      </div>
+      <div class="feature">
+        <h3><a href="https://github.com/ArgonneCPAC/diffsky">diffsky</a></h3>
+        <p class="muted">Differentiable synthetic galaxy catalogs.</p>
+        <p>An intrinsic-alignment model for the lightcone production pipeline. Reported a satellite-positioning bug, which led
+          to a fix, and am writing tests to catch similar issues.</p>
       </div>
     </div>
   </section>
@@ -168,7 +223,7 @@
 </main>
 
 <footer>
-  <span>© 2026 Carter Williams</span>
+  <span>© 2026 Carter Williams · <a href="mailto:williams.cart@northeastern.edu">williams.cart@northeastern.edu</a></span>
   <button class="theme-toggle" id="theme-toggle" type="button">Toggle theme</button>
 </footer>
 

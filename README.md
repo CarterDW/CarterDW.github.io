@@ -9,7 +9,7 @@ Personal academic site. Plain HTML/CSS with no build step: edit `index.html` and
 
 Before launch: delete the `<meta name="robots" content="noindex">` line in `index.html` (it keeps the draft out of search engines).
 
-Placeholders are marked `TODO` (highlighted yellow on the page): `grep -n TODO index.html`.
+Content comes from the CV (Downloads/Carter Williams CV.pdf, Nov 2026). The CV link is commented out until a phone-free `assets/CV.pdf` is added; search index.html for "CV: uncomment".
 
 The portfolio lives in its own repo, `comp2026-portfolio`, served at
 `/comp2026-portfolio/` with one sub-site per project (`solar-system/`, `defects/`, `sky-classifier/`).
