@@ -189,3 +189,7 @@ footer {
 @media (max-width: 520px) {
   .nav .brand { display: none; }
 }
+
+/* small class-work link at the end of the page */
+.classwork { margin: 48px 0 0; font-size: 15px; }
+.classwork .muted { margin-left: 6px; font-size: 14px; }
