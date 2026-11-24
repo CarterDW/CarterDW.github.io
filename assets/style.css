@@ -212,11 +212,11 @@ body.space .feature { box-shadow: 0 1px 0 rgba(255, 255, 255, .03) inset; }
 body.space .theme-toggle { display: none; }
 
 /* the banner */
-body.space .hero {
+body.space .hero, body.space .page-hero {
   position: relative; isolation: isolate; color: #eef2ff;
   padding: 96px 0 84px; margin-top: 0;
 }
-body.space .hero::before {
+body.space .hero::before, body.space .page-hero::before {
   content: ""; position: absolute; z-index: -1; top: 0; bottom: 0;
   left: calc(50% - 50vw); right: calc(50% - 50vw);
   background:
@@ -224,10 +224,18 @@ body.space .hero::before {
     url("img/cosmic-web.jpg") center 30% / cover;
 }
 body.space .hero .role { color: #b9c3e6; }
-body.space .hero .btn { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .28); color: #eef2ff; }
-body.space .hero .btn:hover { border-color: #fff; color: #fff; }
-body.space .hero .btn.primary { background: #eef2ff; border-color: #eef2ff; color: #0b1022; }
+body.space .page-hero .lede { color: #dfe5f7; }
+body.space .page-hero .kicker { color: #a9c1ff; }
+body.space .page-hero .crumb, body.space .page-hero .crumb a { color: #b9c3e6; }
+body.space .hero .btn, body.space .page-hero .btn { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .28); color: #eef2ff; }
+body.space .hero .btn:hover, body.space .page-hero .btn:hover { border-color: #fff; color: #fff; }
+body.space .hero .btn.primary, body.space .page-hero .btn.primary { background: #eef2ff; border-color: #eef2ff; color: #0b1022; }
 body.space main > section:first-of-type { padding-top: 40px; }
 @media (max-width: 760px) {
-  body.space .hero { padding: 64px 0 56px; }
+  body.space .hero, body.space .page-hero { padding: 64px 0 56px; }
 }
+
+/* portfolio pages (.page-hero): the banner spans the window, the text keeps its reading width */
+body.space .page-hero { max-width: none; color: #eef2ff; }
+body.space .page-hero > * { max-width: 760px; }
+body.space .page-hero .crumb { padding-top: 0; margin-bottom: 26px; }
