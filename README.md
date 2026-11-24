@@ -15,3 +15,10 @@ The portfolio lives in its own repo, `comp2026-portfolio`, served at
 
 Local preview: `python -m http.server` here, then open http://localhost:8000.
 (The `/comp2026-portfolio/` links only resolve on GitHub Pages.)
+
+## Look
+`<body class="space">`: an always-dark navy page with a starfield tile, and a full-width cosmic-web banner behind the header.
+Both images are generated, so they can be remade or re-rolled with a new seed:
+- `tools/cosmic_web.py` → `assets/img/cosmic-web.jpg`: 2D Zel'dovich approximation, about 11.5M particles, log density.
+- `tools/starfield.py` → `assets/img/stars.png`: a seamless 512 px tile of faint stars.
+Run both with the HaloPipeline Python from the repo root.

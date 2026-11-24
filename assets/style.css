@@ -193,3 +193,41 @@ footer {
 /* small class-work link at the end of the page */
 .classwork { margin: 48px 0 0; font-size: 15px; }
 .classwork .muted { margin-left: 6px; font-size: 14px; }
+
+/* ================= space theme (academic site only: <body class="space">) =================
+   Deep navy page with a faint starfield; the header sits on a full-width cosmic-web banner
+   (tools/cosmic_web.py) that fades into the navy. Always dark, so no theme toggle. */
+
+body.space {
+  --bg: #0b1022; --surface: #111a33; --text: #e6e9f5; --muted: #9ea7c4;
+  --line: #232d4c; --accent: #8fb2ff; --accent-soft: rgba(120, 150, 255, .14);
+  color-scheme: dark;
+  background-color: var(--bg);
+  background-image: url("img/stars.png");
+  background-size: 512px 512px;
+}
+body.space .nav { background: rgba(11, 16, 34, .82); border-bottom-color: rgba(143, 178, 255, .12); }
+body.space .btn.primary { color: #0b1022; }
+body.space .feature { box-shadow: 0 1px 0 rgba(255, 255, 255, .03) inset; }
+body.space .theme-toggle { display: none; }
+
+/* the banner */
+body.space .hero {
+  position: relative; isolation: isolate; color: #eef2ff;
+  padding: 96px 0 84px; margin-top: 0;
+}
+body.space .hero::before {
+  content: ""; position: absolute; z-index: -1; top: 0; bottom: 0;
+  left: calc(50% - 50vw); right: calc(50% - 50vw);
+  background:
+    linear-gradient(180deg, rgba(5, 7, 18, .15) 0%, rgba(11, 16, 34, .35) 65%, #0b1022 100%),
+    url("img/cosmic-web.jpg") center 30% / cover;
+}
+body.space .hero .role { color: #b9c3e6; }
+body.space .hero .btn { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .28); color: #eef2ff; }
+body.space .hero .btn:hover { border-color: #fff; color: #fff; }
+body.space .hero .btn.primary { background: #eef2ff; border-color: #eef2ff; color: #0b1022; }
+body.space main > section:first-of-type { padding-top: 40px; }
+@media (max-width: 760px) {
+  body.space .hero { padding: 64px 0 56px; }
+}
